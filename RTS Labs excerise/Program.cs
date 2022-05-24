@@ -19,7 +19,7 @@ public class RTSExcercise
              {
                 dict_aboveBelow["above"] = dict_aboveBelow["above"] + 1;
             }
-            else if( i < int_Comparison)
+            else if(i < int_Comparison)
             {
                 dict_aboveBelow["below"] = dict_aboveBelow["below"] + 1;
             }
@@ -30,11 +30,11 @@ public class RTSExcercise
     // input:
     //  a string (the original string)
     //  a positive integer(the rotation amount)
-    // output: a new string, rotating the characters in the original string to the right by the rotation amount and have the overflow appear at the beginning
-    //  
+    // output:
+    //  a new string, rotating the characters in the original string to the right by the rotation amount and have the overflow appear at the beginning
     public static string stringRotation(string str_Rotate, int int_RotateAmount)
     {
-        return str_Rotate.Substring(int_RotateAmount % str_Rotate.Length) + str_Rotate.Substring(0,int_RotateAmount % str_Rotate.Length);
+        return str_Rotate.Substring(int_RotateAmount % str_Rotate.Length) + str_Rotate.Substring(0, int_RotateAmount % str_Rotate.Length);
     }
 
     static void Main()
@@ -48,7 +48,7 @@ public class RTSExcercise
 
         // test stringRotation
         string str_test = "Hello world!";
-        int_test = 5;
+        int_test = 15;
         Console.Out.WriteLine(stringRotation(str_test, int_test));
     }
 }
