@@ -42,7 +42,7 @@ public class RTSExcercise
         // test aboveBelow
         List<int> list_int_test = new List<int>{ -1,2,311,4,5};
         int int_test = 0;
-        Dictionary<string,int> dict_output = aboveBelow(list_int_test, 0);
+        Dictionary<string,int> dict_output = aboveBelow(list_int_test, int_test);
         foreach(KeyValuePair<string,int> kvp in dict_output)
             Console.Out.WriteLine(kvp.ToString());
 
